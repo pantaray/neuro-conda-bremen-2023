@@ -1,0 +1,129 @@
+---
+title: "neuro-conda"
+subtitle: "A Python Distribution for Neuroscience"
+author:
+  - Stefan Fürtinger
+  - Joscha Tapani Schmiedt
+date: November 9 2023
+date-format: long
+institute:
+  - Ernst Strüngmann Institute </br> Frankfurt
+  - Brain Research Institute </br> Universität Bremen
+title-slide-attributes:
+  data-background-image: css/esi_bg.png
+format:
+  revealjs:
+    theme: [white, css/esi.scss]
+    slide-number: c
+    menu: true
+    progress: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    code-line-numbers: false
+    highlight-style: github
+    auto-play-media: true
+    pdf-separate-fragments: true
+    transition: slide
+include-after-body: css/esi_borders.html
+revealjs-plugins:
+  - attribution
+filters:
+  - reveal-auto-agenda
+auto-agenda:
+  bullets: none
+  heading: Outline
+---
+<!--
+SPDX-FileCopyrightText: 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+in Cooperation with Max Planck Society
+SPDX-License-Identifier: CC-BY-NC-SA-1.0
+-->
+
+```{=html}
+<section class="title-slide slide level1 agenda-slide center" data-transition="none">
+<div class="agenda-heading">
+<p>Outline</p>
+</div>
+<div class="agenda">
+<div class="agenda-active">
+<p>Why</p>
+</div>
+<div class="agenda-active">
+<p>How</p>
+</div>
+<div class="agenda-active">
+<p>When</p>
+</div>
+</div>
+</section>
+```
+
+# Why
+
+## Python is Easy...
+
+::: {.r-stack}
+![](imgs/conda_xkcd.png)
+:::
+
+::: {.attribution}
+Taken from [xkcd](https://xkcd.com/1987/)
+:::
+
+## ...Especially on Windows
+
+::: {.r-stack}
+![](imgs/pythondocu.gif)
+:::
+
+::: {.attribution}
+See the [Official Python Documentation](https://docs.python.org/3/using/windows.html)
+:::
+
+## Just Use Conda!
+
+::: {.r-stack}
+![](imgs/conda_qt.png){.fragment}
+![](imgs/conda.gif){.fragment}
+:::
+
+
+# The Middle
+
+## Custom [Style]{style="color: red"} in Slide Title
+
+::: {.incremental style="font-size: 1.0em; " .absolute .position top="3em"}
+- here some
+- [important]{.esi-emph} bullets
+- and more...
+:::
+
+::: {style="height: 7em; "}
+:::
+
+. . .
+
+Check out the Quarto Docs covering
+
+- [Reveal Basics](https://quarto.org/docs/presentations/revealjs/)
+- [Advanced Reveal](https://quarto.org/docs/presentations/revealjs/advanced.html)
+
+# The Last Act
+
+## {background-image="css/esi_bg.png" style="color: white; "}
+
+![](css/esi_logo_white.png){.absolute width="20%" right="-4em" top="-1em"}
+
+::: {style="height: 2em; "}
+:::
+
+::: {.r-fit-text}
+Finish!
+:::
+
+Look! No title!
+
+::: footer
+[[www.esi-frankfurt.de]{style="font-size: 1.5em; color: white; "}](https://www.esi-frankfurt.de)
+:::

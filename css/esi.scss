@@ -1,0 +1,45 @@
+// Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+// in Cooperation with Max Planck Society
+// SPDX-License-Identifier: CC-BY-NC-SA-1.0
+
+/*-- scss:defaults --*/
+
+// Custom color definitions
+$baseColor: #298c76;
+$lightBaseColor: #3dd09e;
+$link-color: $lightBaseColor;
+$code-block-border-color: $baseColor;
+
+// Shortcut for highlighting text in ESI-green
+.esi-emph {
+    color: $baseColor;
+    font-weight: bold;
+}
+
+// Shortcut for just using ESI-green
+.esi-color {
+    color: $baseColor;
+}
+
+// Custom header for slides
+.reveal .esi-lr-gradient {
+    height: 0.3em;
+    background-image: linear-gradient(to right, #1ff5a9, $lightBaseColor);
+}
+
+.reveal .esi-header {
+    position: absolute;
+    top: 0.0em;
+    left: 0em;
+    width: 100%;
+    height: 1em;
+}
+
+.reveal .header-col {
+    float: right;
+    width: 7%;
+}
+
+.reveal ::marker {
+    color: $lightBaseColor
+}

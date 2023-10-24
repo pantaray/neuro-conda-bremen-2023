@@ -1,0 +1,49 @@
+<!--
+  Copyright (c) 2023 Ernst Strüngmann Institute (ESI) for Neuroscience
+  in Cooperation with Max Planck Society
+  SPDX-License-Identifier: CC-BY-NC-SA-1.0
+-->
+
+<div class="esi-header">
+    <section>
+        <div class="esi-lr-gradient"></div>
+        <div class="header-col">
+          <a href="https://www.esi-frankfurt.de">
+            <img src="css/esi_logo.png" alt="ESI Logo" style="position:relative; top: 0.1em; right: 0.7em">
+          </a>
+        </div>
+    </section>
+</div>
+
+<script>
+  function add_header() {
+    let header = document.querySelector("div.esi-header");
+    let reveal = document.querySelector(".reveal");
+    reveal.insertBefore(header, reveal.firstChild);
+
+    // Define header-div-element(s) holding white ESI logo
+    let title_slide = document.querySelector("section#title-slide");
+    let title_header = document.createElement("div");
+    title_header.style.cssText = "position: absolute; top: -4em; width: 100%; height: 1em; "
+    let title_header_col = document.createElement("div");
+    title_header_col.style.cssText = "position: relative; width: 20%; left: 95%; ";
+    let esi_logo_white = document.createElement("img");
+    esi_logo_white.setAttribute("src","css/esi_logo_white.png");
+    esi_logo_white.setAttribute("position", "relative");
+    esi_logo_white.setAttribute("top", "0em");
+    esi_logo_white.setAttribute("right", "0.0em");
+    title_header_col.appendChild(esi_logo_white);
+    title_header.appendChild(title_header_col);
+
+    // Use white logo + font-color on title slide
+    // Adapted from
+    // https://stackoverflow.com/questions/76505317/custom-footer-on-the-title-slide-for-quarto-revealjs-slides
+    if (title_slide.classList.contains("present")) {
+      title_slide.style.setProperty("color", "#ffffff");
+      title_slide.style.setProperty("--r-heading-color", "#ffffff");
+      title_slide.appendChild(title_header);
+    }
+
+  }
+  window.onload = add_header();
+</script>
