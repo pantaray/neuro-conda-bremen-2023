@@ -50,10 +50,10 @@ SPDX-License-Identifier: CC-BY-NC-SA-1.0
 <p>Why</p>
 </div>
 <div class="agenda-active">
-<p>How</p>
+<p>What</p>
 </div>
 <div class="agenda-active">
-<p>When</p>
+<p>How</p>
 </div>
 </div>
 </section>
@@ -61,17 +61,86 @@ SPDX-License-Identifier: CC-BY-NC-SA-1.0
 
 # Why
 
-## Python is Easy...
+## Python is Great!
 
-::: {.r-stack}
-![](imgs/conda_xkcd.png)
+::: {.fragment .absolute top="2em"}
+Data Analysis!
+
+```{.python style="font-size: 0.6em; "}
+[1]: import numpy as np
+     import seaborn as sns
+     sns.set_theme(style="ticks")
+
+     rs = np.random.RandomState(11)
+     x = rs.gamma(2, size=1000)
+     y = -.5 * x + rs.normal(size=1000)
+
+     sns.jointplot(x=x, y=y, kind="hex", color="#4CB391")
+```
+![](imgs/seaborn.png){.absolute width="50%"}
+
+:::
+
+::: {.fragment .absolute right="2.5em" top="2em"}
+Statistics!
+
+```{.python style="font-size: 0.6em; "}
+[1]: import statsmodels.api as sm
+     x = np.linspace(0, 10, 100); X = np.column_stack((x, x ** 2))
+     beta = np.array([1, 0.1, 10]); e = np.random.normal(size=100)
+     X = sm.add_constant(X); y = np.dot(X, beta) + e
+     model = sm.OLS(y, X); results = model.fit()
+     print(results.summary())
+
+                                 OLS Regression Results
+     ==============================================================================
+     Dep. Variable:                      y   R-squared:                       1.000
+     Model:                            OLS   Adj. R-squared:                  1.000
+     Method:                 Least Squares   F-statistic:                 4.020e+06
+     Date:                Wed, 25 Oct 2023   Prob (F-statistic):          2.83e-239
+     Time:                        11:13:17   Log-Likelihood:                -146.51
+     No. Observations:                 100   AIC:                             299.0
+     Df Residuals:                      97   BIC:                             306.8
+     Df Model:                           2
+     Covariance Type:            nonrobust
+     ==============================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+     ------------------------------------------------------------------------------
+     const          1.3423      0.313      4.292      0.000       0.722       1.963
+     x1            -0.0402      0.145     -0.278      0.781      -0.327       0.247
+     x2            10.0103      0.014    715.745      0.000       9.982      10.038
+     ==============================================================================
+     Omnibus:                        2.042   Durbin-Watson:                   2.274
+     Prob(Omnibus):                  0.360   Jarque-Bera (JB):                1.875
+     Skew:                           0.234   Prob(JB):                        0.392
+     Kurtosis:                       2.519   Cond. No.                         144.
+     ==============================================================================
+
+```
+:::
+
+::: {.fragment .absolute right="0em" top="2em"}
+[Machine Learning!]{style="background-color: white; "}
+
+```{.python style="font-size: 0.6em; "}
+[1]:
+from sklearn.cluster import MeanShift, estimate_bandwidth
+from sklearn.datasets import make_blobs
+
+centers = [[1, 1], [-1, -1], [1, -1]]
+X, _ = make_blobs(n_samples=10000, centers=centers, cluster_std=0.6)
+bandwidth = estimate_bandwidth(X, quantile=0.2, n_samples=500)
+ms = MeanShift(bandwidth=bandwidth, bin_seeding=True)
+ms.fit(X)
+```
+![](imgs/sklearn.png){.absolute width="50%"}
 :::
 
 ::: {.attribution}
-Taken from [xkcd](https://xkcd.com/1987/)
+See [seaborn](https://seaborn.pydata.org/examples/hexbin_marginals.html), [statsmodels](https://www.statsmodels.org/stable/examples/notebooks/generated/ols.html) and [scikit-learn](https://scikit-learn.org/stable/auto_examples/cluster/plot_mean_shift.html#sphx-glr-auto-examples-cluster-plot-mean-shift-py)
 :::
 
-## ...Especially on Windows
+## Just Install It!
 
 ::: {.r-stack}
 ![](imgs/pythondocu.gif)
@@ -81,35 +150,142 @@ Taken from [xkcd](https://xkcd.com/1987/)
 See the [Official Python Documentation](https://docs.python.org/3/using/windows.html)
 :::
 
-## Just Use Conda!
+## "Just" Install It!
 
 ::: {.r-stack}
-![](imgs/conda_qt.png){.fragment}
-![](imgs/conda.gif){.fragment}
+![](imgs/conda_xkcd.png)
 :::
 
-
-# The Middle
-
-## Custom [Style]{style="color: red"} in Slide Title
-
-::: {.incremental style="font-size: 1.0em; " .absolute .position top="3em"}
-- here some
-- [important]{.esi-emph} bullets
-- and more...
+::: {.attribution}
+Taken from [xkcd](https://xkcd.com/1987/)
 :::
 
-::: {style="height: 7em; "}
+## Just Use Conda!
+
+::: {.fragment .absolute}
+![](imgs/conda_glibc.png)
+:::
+
+::: {.fragment .absolute top="5em" left="2em"}
+![](imgs/conda_qt.png)
+:::
+
+::: {.fragment .absolute left="4em" top="1.5em"}
+![](imgs/conda.gif){width="100%"}
+
+::: {.attribution}
+See the [Official conda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/troubleshooting.html)
+:::
+
+:::
+
+# What
+
+## neuro-conda 🧠🐍
+
+A Python Distribution for Neuroscience
+
+::: {.incremental}
+- use [conda]{.esi-emph} without having to use conda
+- [simplifies]{.esi-emph} learning and using Python in neuroscience
+- [bundles]{.esi-emph} commonly used neuroscience packages into curated conda environments
+- supports [{{< fa brands windows >}} Windows]{.esi-emph}, [{{< fa brands apple >}} macOS]{.esi-emph} and [{{< fa brands linux >}} Linux]{.esi-emph}
 :::
 
 . . .
 
-Check out the Quarto Docs covering
+**What's Inside?**
 
-- [Reveal Basics](https://quarto.org/docs/presentations/revealjs/)
-- [Advanced Reveal](https://quarto.org/docs/presentations/revealjs/advanced.html)
+## Electrophsysiology (Spikes + LFP)
 
-# The Last Act
+![](imgs/brian_logo_big.png){.absolute width="10%"}
+![](imgs/elephant_logo_sidebar.png){.absolute width="10%" left="3em"}
+![](imgs/viziphant_logo_sidebar.png){.absolute width="10%" left="6em"}
+![](imgs/syncopy_logo.png){.absolute width="10%" left="9em"}
+![](imgs/neurotic-logo-150.png){.absolute width="10%" left="12em"}
+![](imgs/pynapple_logo.png){.absolute width="10%" left="15em"}
+![](imgs/circus.png){.absolute width="10%" left="18em"}
+![](imgs/spikeinterface.png){.absolute width="10%" left="21em"}
+![](imgs/suite2p_logo.png){.absolute width="10%" left="24em"}
+
+## Electrophysiology (LFP + M/EEG) + Neuroimaging
+
+![](imgs/mne_logo.png){.absolute width="10%"}
+![](imgs/eelbrain.png){.absolute width="10%" left="3em"}
+![](imgs/mne_bids.png){.absolute width="10%" left="6em"}
+![](imgs/mnelab_logo.png){.absolute width="10%" left="9em"}
+![](imgs/mne_nirs_logo_small.png){.absolute width="10%" left="12em"}
+![](imgs/mne_realtime.png){.absolute width="10%" left="15em"}
+![](imgs/neurokit.png){.absolute width="10%" left="18em"}
+![](imgs/dipy-logo.png){.absolute width="10%" left="21em"}
+
+## Machine Learning + Parallelization
+
+![](imgs/nilearn-transparent.png){.absolute width="10%"}
+![](imgs/nipype-banner-bg.png){.absolute width="10%" left="3em"}
+![](imgs/nitime-banner-bg.png){.absolute width="10%" left="6em"}
+![](imgs/pytorch-logo-dark.png){.absolute width="10%" left="9em"}
+![](imgs/scikit-learn-logo-small.png){.absolute width="10%" left="12em"}
+![](imgs/tensorflow.png){.absolute width="10%" left="15em"}
+![](imgs/dask.png){.absolute width="10%" left="18em"}
+![](imgs/acme_logo.png){.absolute width="10%" left="21em"}
+
+## Data, Formats, Coding
+
+![](imgs/black.png){.absolute width="10%"}
+![](imgs/hdf5.png){.absolute width="10%" left="6em"}
+![](imgs/imageio_logo.png){.absolute width="10%" left="9em"}
+![](imgs/jupyter.png){.absolute width="10%" left="12em"}
+![](imgs/numpy.png){.absolute width="10%" left="15em"}
+![](imgs/scipy.png){.absolute width="10%" left="18em"}
+![](imgs/matplotlib.png){.absolute width="10%" left="21em"}
+![](imgs/seaborn_logo.png){.absolute width="10%" left="24em"}
+![](imgs/Rlogo.png){.absolute width="10%" left="27em"}
+
+![](imgs/neologo.png){.absolute width="10%" top="8em"}
+![](imgs/nibabel-logo.png){.absolute width="10%" top="8em" left="3em"}
+![](imgs/nix_logo.png){.absolute width="10%" top="8em" left="6em"}
+![](imgs/pydicom.png){.absolute width="10%" top="8em" left="9em"}
+![](imgs/deid.png){.absolute width="10%" top="8em" left="12em"}
+![](imgs/pynwb.png){.absolute width="10%" top="8em" left="15em"}
+
+# How
+
+## Just Install It!
+
+## Just Install It! (No, Really) {transition="none"}
+
+. . .
+
+{{< fa brands windows >}} Windows 10/11 (PowerShell)
+
+```{.powershell style="font-size: 0.9em; "}
+Invoke-WebRequest `
+https://raw.githubusercontent.com/neuro-conda/neuro-conda/main/libexec/install.ps1 `
+-OutFile $Env:temp\install_neuroconda.ps1; `
+Invoke-Expression $Env:temp\install_neuroconda.ps1;
+```
+
+. . .
+
+{{< fa brands apple >}} macOS + {{< fa brands linux >}} Linux
+
+```{.bash style="font-size: 0.9em; "}
+/bin/bash -c "$(curl -fsSL \
+https://raw.githubusercontent.com/neuro-conda/neuro-conda/main/libexec/uninstall.sh)"
+```
+
+## {{< fa brands windows >}} Windows 10/11 (PowerShell)
+
+Here a gif
+
+## {{< fa brands apple >}} macOS + {{< fa brands linux >}} Linux
+
+Here a gif
+
+## Customization
+
+Coming soon...
 
 ## {background-image="css/esi_bg.png" style="color: white; "}
 
