@@ -277,15 +277,47 @@ https://raw.githubusercontent.com/neuro-conda/neuro-conda/main/libexec/uninstall
 
 ## {{< fa brands windows >}} Windows 10/11 (PowerShell)
 
-Here a gif
+::: {.r-stack}
+![](imgs/powershell_scriptblock.gif){.fragment .fade-in-then-out .absolute height="88%" left="2em"}
+![](imgs/powershell_block.png){.fragment .fade-in-then-out .absolute top="2em" left="0em"}
+
+::: {.fragment .fade-in-then-out .absolute top="1.7em" left="0em"}
+![](imgs/powershell_execpol1.png)
+
+```{.powershell style="font-size: 0.9em; "}
+Set-ExecutionPolicy -ExecutionPolicy ByPass -Scope Process
+```
+:::
+
+![](imgs/powershell_execpol2.png){.fragment .fade-in-then-out .absolute top="2em" left="0em"}
+![](imgs/powershell_neuroconda.png){.fragment .fade-in-then-out .absolute top="2em" left="0em"}
+
+:::
+
 
 ## {{< fa brands apple >}} macOS + {{< fa brands linux >}} Linux
 
-Here a gif
+::: {.r-stack}
+![](imgs/macos_neuroconda.gif){.fragment .fade-in-then-out .absolute height="90%" left="2.5em" top="1.7em"}
+:::
 
-## Customization
+## Usage
 
-Coming soon...
+{{< fa brands windows >}} Open a PowerShell window
+{{< fa brands apple >}} + {{< fa brands linux >}} Open a terminal window
+
+. . .
+
+```{.shell}
+(neuro-conda-2023b) myusername@mycomputer ~ % _
+(neuro-conda-2023b) ipython
+```
+
+```{.shell}
+(neuro-conda-2023b) PS C:\Users\myusername >
+(neuro-conda-2023b) ipython
+```
+
 
 ## {background-image="css/esi_bg.png" style="color: white; "}
 
