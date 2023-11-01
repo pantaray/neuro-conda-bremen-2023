@@ -301,40 +301,141 @@ Set-ExecutionPolicy -ExecutionPolicy ByPass -Scope Process
 ![](imgs/macos_neuroconda.gif){.fragment .fade-in-then-out .absolute height="90%" left="2.5em" top="1.7em"}
 :::
 
-## Usage
+## Usage {auto-animate="true"}
+
+. . .
 
 {{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
+(neuro-conda-2023b) PS C:\Users\myusername > _
+```
+
+## Usage {auto-animate="true"}
+
+{{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
+(neuro-conda-2023b) PS C:\Users\myusername > _
+(neuro-conda-2023b) PS C:\Users\myusername > ipython
+```
+
+## Usage {auto-animate="true"}
+
+{{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
+(neuro-conda-2023b) PS C:\Users\myusername > _
+(neuro-conda-2023b) PS C:\Users\myusername > ipython
+Python 3.10.12 (main, Jul  5 2023, 18:54:27) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help
+
+In [1]: _
+```
+
+## Usage {auto-animate="true"}
+
+{{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
+(neuro-conda-2023b) PS C:\Users\myusername > _
+(neuro-conda-2023b) PS C:\Users\myusername > ipython
+Python 3.10.12 (main, Jul  5 2023, 18:54:27) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help
+
+In [1]: _
+```
+
 {{< fa brands apple >}} + {{< fa brands linux >}} Open a terminal window
 
 . . .
 
-```{.shell}
+```{data-id="term1"}
 (neuro-conda-2023b) myusername@mycomputer ~ % _
-(neuro-conda-2023b) ipython
 ```
 
-```{.shell}
+## Usage {auto-animate="true"}
+
+{{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
 (neuro-conda-2023b) PS C:\Users\myusername > _
-(neuro-conda-2023b) ipython
+(neuro-conda-2023b) PS C:\Users\myusername > ipython
 Python 3.10.12 (main, Jul  5 2023, 18:54:27) [MSC v.1916 64 bit (AMD64)]
 Type 'copyright', 'credits' or 'license' for more information
 IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help
+
 In [1]: _
 ```
 
+{{< fa brands apple >}} + {{< fa brands linux >}} Open a terminal window
+
+```{data-id="term1"}
+(neuro-conda-2023b) myusername@mycomputer ~ % _
+(neuro-conda-2023b) myusername@mycomputer ~ % ipython
+```
+
+## Usage {auto-animate="true"}
+
+{{< fa brands windows >}} Open a PowerShell window
+
+```{data-id="pwsh1"}
+(neuro-conda-2023b) PS C:\Users\myusername > _
+(neuro-conda-2023b) PS C:\Users\myusername > ipython
+Python 3.10.12 (main, Jul  5 2023, 18:54:27) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help
+
+In [1]: _
+```
+
+{{< fa brands apple >}} + {{< fa brands linux >}} Open a terminal window
+
+```{data-id="term1"}
+(neuro-conda-2023b) myusername@mycomputer ~ % _
+(neuro-conda-2023b) myusername@mycomputer ~ % ipython
+Python 3.10.11 (main, Jul 5 2023, 13:41:39) [Clang 14.0.6 ]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: _
+```
+
+## Happy Pythoning!
+
+::: {.absolute top="1.5em" style="font-size: 3em; "}
+neuro-conda 🧠🐍
+:::
+
+::: {.absolute top="9em"}
+[Documentation:]{.esi-emph}
+
+[https://github.com/neuro-conda/neuro-conda#readme](https://github.com/neuro-conda/neuro-conda#readme)
+
+[Questions/Problems:]{.esi-emph}
+
+[https://github.com/neuro-conda/neuro-conda/issues](https://github.com/neuro-conda/neuro-conda/issues)
+:::
 
 ## {background-image="css/esi_bg.png" style="color: white; "}
 
-![](css/esi_logo_white.png){.absolute width="20%" right="-4em" top="-1em"}
+![](css/esi_logo_white.png){.absolute width="20%" right="-3em" top="-1em"}
 
-::: {style="height: 2em; "}
+::: {.absolute top="0em" style="font-size: 2em; "}
+Thank You For Your Attention!
 :::
 
-::: {.r-fit-text}
-Finish!
-:::
+![](imgs/me.jpeg){.absolute top="4em" left="3em" width="16%"}
+[Stefan]{.absolute top="9.5em" left="4.5em" style="font-size: 0.9em; "}
+[{{< fa brands github >}} [@pantaray](https://github.com/pantaray){style="color: white; "}]{.absolute top="5.8em" left="9.5em" style="font-size: 0.9em; "}
+[{{< fa envelope >}} [stefan.fuertinger@esi-frankfurt.de](mailto:stefan.fuertinger@esi-frankfurt.de){style="color: white; "}]{.absolute top="7.2em" left="9.5em" style="font-size: 0.9em; "}
 
-Look! No title!
+![](imgs/joscha.jpeg){.absolute top="10em" left="3em" width="16%"}
+[Joscha]{.absolute top="16.1em" left="4.2em" style="font-size: 0.9em; "}
+[{{< fa brands github >}} [@joschaschmiedt](https://github.com/joschaschmiedt){style="color: white; "}]{.absolute top="12.5em" left="9.5em" style="font-size: 0.9em; "}
+[{{< fa envelope >}} [schmiedt@brain.uni-bremen.de](mailto:schmiedt@brain.uni-bremen.de){style="color: white; "}]{.absolute top="13.9em" left="9.5em" style="font-size: 0.9em; "}
 
 ::: footer
 [[www.esi-frankfurt.de]{style="font-size: 1.5em; color: white; "}](https://www.esi-frankfurt.de)
