@@ -198,56 +198,55 @@ A Python Distribution for Neuroscience
 
 ## Electrophsysiology (Spikes + LFP)
 
-![](imgs/brian_logo_big.png){.absolute width="10%"}
-![](imgs/elephant_logo_sidebar.png){.absolute width="10%" left="3em"}
-![](imgs/viziphant_logo_sidebar.png){.absolute width="10%" left="6em"}
-![](imgs/syncopy_logo.png){.absolute width="10%" left="9em"}
-![](imgs/neurotic-logo-150.png){.absolute width="10%" left="12em"}
-![](imgs/pynapple_logo.png){.absolute width="10%" left="15em"}
-![](imgs/circus.png){.absolute width="10%" left="18em"}
-![](imgs/spikeinterface.png){.absolute width="10%" left="21em"}
-![](imgs/suite2p_logo.png){.absolute width="10%" left="24em"}
+![](imgs/brian_logo_big.png){.absolute width="20%"}
+![](imgs/elephant_logo_sidebar.png){.absolute width="20%" top="10em"}
+![](imgs/viziphant_logo_sidebar.png){.absolute width="20%" left="6em" top="6em"}
+![](imgs/syncopy_logo.png){.absolute width="20%" left="6em"}
+![](imgs/neurotic-logo-150.png){.absolute width="15%" left="12em"}
+![](imgs/pynapple_logo.png){.absolute width="25%" left="14em" top="7em"}
+![](imgs/circus.png){.absolute width="25%" left="18em"}
+![](imgs/spikeinterface.png){.absolute width="10%" top="6em"}
+![](imgs/suite2p_logo.png){.absolute width="15%" left="22em" top="9em"}
 
 ## Electrophysiology (LFP + M/EEG) + Neuroimaging
 
-![](imgs/mne_logo.png){.absolute width="10%"}
-![](imgs/eelbrain.png){.absolute width="10%" left="3em"}
-![](imgs/mne_bids.png){.absolute width="10%" left="6em"}
-![](imgs/mnelab_logo.png){.absolute width="10%" left="9em"}
-![](imgs/mne_nirs_logo_small.png){.absolute width="10%" left="12em"}
-![](imgs/mne_realtime.png){.absolute width="10%" left="15em"}
-![](imgs/neurokit.png){.absolute width="10%" left="18em"}
-![](imgs/dipy-logo.png){.absolute width="10%" left="21em"}
+![](imgs/mne_logo.png){.absolute width="30%"}
+![](imgs/eelbrain.png){.absolute width="20%" top="9em"}
+![](imgs/mne_bids.png){.absolute width="40%" left="8em"}
+![](imgs/mnelab_logo.png){.absolute width="30%" left="9em" top="6em"}
+![](imgs/mne_nirs_logo_small.png){.absolute width="30%" left="6em" top="9em"}
+![](imgs/mne_realtime.png){.absolute width="30%" left="7em" top="12em"}
+![](imgs/neurokit.png){.absolute width="15%" left="19em"}
+![](imgs/dipy-logo.png){.absolute width="20%" left="18em" top="11em"}
 
 ## Machine Learning + Parallelization
 
-![](imgs/nilearn-transparent.png){.absolute width="10%"}
-![](imgs/nipype-banner-bg.png){.absolute width="10%" left="3em"}
-![](imgs/nitime-banner-bg.png){.absolute width="10%" left="6em"}
-![](imgs/pytorch-logo-dark.png){.absolute width="10%" left="9em"}
-![](imgs/scikit-learn-logo-small.png){.absolute width="10%" left="12em"}
-![](imgs/tensorflow.png){.absolute width="10%" left="15em"}
-![](imgs/dask.png){.absolute width="10%" left="18em"}
-![](imgs/acme_logo.png){.absolute width="10%" left="21em"}
+![](imgs/nilearn-transparent.png){.absolute width="15%"}
+![](imgs/nipype-banner-bg.png){.absolute width="50%" top="8em"}
+![](imgs/nitime-banner-bg.png){.absolute width="50%" left="6em"}
+![](imgs/pytorch-logo-dark.png){.absolute width="30%" left="9em" top="6em"}
+![](imgs/scikit-learn-logo-small.png){.absolute width="20%" left="13em" top="10em"}
+![](imgs/tensorflow.png){.absolute width="30%" top="12em"}
+![](imgs/dask.png){.absolute width="30%" left="21em" top="6em"}
+![](imgs/acme_logo.png){.absolute width="15%" left="21em"}
 
 ## Data, Formats, Coding
 
-![](imgs/black.png){.absolute width="10%"}
-![](imgs/hdf5.png){.absolute width="10%" left="6em"}
-![](imgs/imageio_logo.png){.absolute width="10%" left="9em"}
-![](imgs/jupyter.png){.absolute width="10%" left="12em"}
-![](imgs/numpy.png){.absolute width="10%" left="15em"}
-![](imgs/scipy.png){.absolute width="10%" left="18em"}
-![](imgs/matplotlib.png){.absolute width="10%" left="21em"}
-![](imgs/seaborn_logo.png){.absolute width="10%" left="24em"}
-![](imgs/Rlogo.png){.absolute width="10%" left="27em"}
+![](imgs/black.png){.absolute width="20%"}
+![](imgs/hdf5.png){.absolute width="15%" left="6em"}
+![](imgs/imageio_logo.png){.absolute width="10%" left="12em"}
+![](imgs/jupyter.png){.absolute width="10%" left="16em"}
+![](imgs/Rlogo.png){.absolute width="12%" left="21em"}
+![](imgs/numpy.png){.absolute width="20%" top="5.5em"}
+![](imgs/scipy.png){.absolute width="15%" left="6em" top="6em"}
+![](imgs/matplotlib.png){.absolute width="20%" left="11em" top="6em"}
+![](imgs/seaborn_logo.png){.absolute width="20%" left="18em" top="6em"}
 
-![](imgs/neologo.png){.absolute width="10%" top="8em"}
-![](imgs/nibabel-logo.png){.absolute width="10%" top="8em" left="3em"}
-![](imgs/nix_logo.png){.absolute width="10%" top="8em" left="6em"}
-![](imgs/pydicom.png){.absolute width="10%" top="8em" left="9em"}
-![](imgs/deid.png){.absolute width="10%" top="8em" left="12em"}
-![](imgs/pynwb.png){.absolute width="10%" top="8em" left="15em"}
+![](imgs/neologo.png){.absolute width="20%" top="10em"}
+![](imgs/nibabel-logo.png){.absolute width="15%" top="10em" left="6em"}
+![](imgs/nix_logo.png){.absolute width="15%" top="10em" left="12em"}
+![](imgs/deid.png){.absolute width="20%" top="10em" left="17em"}
+![](imgs/pynwb.png){.absolute width="20%" top="10em" left="22em"}
 
 # How
 
@@ -256,6 +255,9 @@ A Python Distribution for Neuroscience
 ## Just Install It! (No, Really) {transition="none"}
 
 . . .
+
+::: {style="height: 1em; "}
+:::
 
 {{< fa brands windows >}} Windows 10/11 (PowerShell)
 
@@ -267,6 +269,9 @@ Invoke-Expression $Env:temp\install_neuroconda.ps1;
 ```
 
 . . .
+
+::: {style="height: 1em; "}
+:::
 
 {{< fa brands apple >}} macOS + {{< fa brands linux >}} Linux
 
