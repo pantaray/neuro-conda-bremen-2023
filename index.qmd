@@ -277,7 +277,7 @@ Invoke-Expression $Env:temp\install_neuroconda.ps1;
 
 ```{.bash style="font-size: 0.9em; "}
 /bin/bash -c "$(curl -fsSL \
-https://raw.githubusercontent.com/neuro-conda/neuro-conda/main/libexec/uninstall.sh)"
+https://raw.githubusercontent.com/neuro-conda/neuro-conda/main/libexec/install.sh)"
 ```
 
 ## {{< fa brands windows >}} Windows 10/11 (PowerShell)
